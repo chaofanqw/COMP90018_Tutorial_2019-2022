@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/crash_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Control UI from threads" />
+
+    <Button
+        android:id="@+id/change_text_runnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crash_button"
+        android:text="Change Text via Runnable Interface" />
+
+    <Button
+        android:id="@+id/change_text_threads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_runnable"
+        android:text="Change Text via Thread class" />
+
+
+    <Button
+        android:id="@+id/change_text_future_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_threads"
+        android:text="Change Text via FutureTask Class" />
+
+
+    <Button
+        android:id="@+id/change_text_asynctask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_future_task"
+        android:text="Change Text via Asynctask class" />
+
+    <Button
+        android:id="@+id/change_text_handler_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_asynctask"
+        android:text="Change Text via HandlerThread class" />
+
+    <Button
+        android:id="@+id/change_text_intent_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_handler_thread"
+        android:text="Change Text via IntentService" />
+
+    <Button
+        android:id="@+id/change_text_event_bus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_text_intent_service"
+        android:text="Change Text via threads through EventBus" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Hello world!"
+        android:textSize="20sp" />
+
+</RelativeLayout>
