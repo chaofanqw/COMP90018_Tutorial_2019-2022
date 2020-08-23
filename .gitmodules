@@ -1,0 +1,6 @@
+[submodule "Week4 - Sensors, Maps/Source Code/android-samples"]
+	path = Week4 - Sensors, Maps/Source Code/android-samples
+	url = https://github.com/googlemaps/android-samples
+[submodule "Week4 - Sensors, Maps/Source Code/compass"]
+	path = Week4 - Sensors, Maps/Source Code/compass
+	url = https://github.com/iutinvg/compass
